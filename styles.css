@@ -99,12 +99,41 @@ h2 {
 }
 
 /* Individual Link Colors */
-.instagram { background:#f7f7f7; }
-.linkedin { background: #0077b5; }
-.whatsapp { background: #25d366; }
-.phone { background: #4caf50; }
-.email { background: #ff5722; }
-.map { background: #4285f4; }
+.instagram {
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
+    border: 2px solid #000; /* Black border */
+}
+
+.linkedin {
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
+    border: 2px solid #000; /* Black border */
+}
+
+.whatsapp {
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
+    border: 2px solid #000; /* Black border */
+}
+
+.phone {
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
+    border: 2px solid #000; /* Black border */
+}
+
+.email {
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
+    border: 2px solid #000; /* Black border */
+}
+
+.map {
+    background: #fff; /* White background */
+    color: #000; /* Black text color */
+    border: 2px solid #000; /* Black border */
+}
 
 /* Hover Effects */
 .social-link:hover {
