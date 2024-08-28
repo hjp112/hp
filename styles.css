@@ -1,0 +1,194 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Styling */
+.profile-container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.profile-container:hover {
+    transform: scale(1.03);
+}
+
+/* Header Styling */
+.profile-header {
+    background: #3b3b3b;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 3px solid #ddd;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 15px 0;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add Contact Button */
+.add-contact {
+    background: #1c87c9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.add-contact:hover {
+    background: #155a7c;
+}
+
+/* Links Section */
+.links {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Social Link Styling */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    gap: 12px; /* Space between icon and text */
+    font-size: 15px; /* Consistent font size for button text */
+}
+
+/* Individual Link Colors */
+.instagram { background: #e1306c; }
+.linkedin { background: #0077b5; }
+.whatsapp { background: #25d366; }
+.phone { background: #4caf50; }
+.email { background: #ff5722; }
+.map { background: #4285f4; }
+
+/* Hover Effects */
+.social-link:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Footer Styling */
+.profile-footer {
+    background: #f7f7f7;
+    padding: 15px;
+    font-size: 12px;
+    color: #777;
+}
+
+.profile-footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.profile-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        max-width: 90%;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .add-contact {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .links {
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    .social-link {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .add-contact {
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+
+    .social-link {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .profile-footer {
+        font-size: 11px;
+    }
+}

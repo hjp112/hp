@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hp Infotech</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="profile-container">
+        <header class="profile-header">
+            <h1>Welcome</h1>
+            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>Harsh Prajapati</h2>
+            <button class="add-contact" onclick="downloadVCard()">
+                <i class="fas fa-address-book"></i> Add to Contacts
+            </button>
+        </header>
+        <section class="links">
+            <a href="https://wa.me/+919998286775" target="_blank" class="social-link whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a href="tel:+919998286775" class="social-link phone">
+                <i class="fas fa-phone"></i> Phone Call
+            </a>
+
+            <a href="https://instagram.com" target="_blank" class="social-link instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <a href="mailto:hpinfotech191112@gmail.com" class="social-link email">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+
+            <a href="https://maps.google.com" target="_blank" class="social-link map">
+                <i class="fas fa-map-marker-alt"></i> Google Map
+            </a>
+        </section>
+    </div>
+
+    <script>
+        function downloadVCard() {
+            // Define vCard data
+            const vCardData = `
+BEGIN:VCARD
+VERSION:3.0
+FN:HpInfotech(Harsh Prajapati)
+TEL;TYPE=cell:+91 9998286775
+EMAIL:hpinfotech191112@gmail.com
+URL:https://instagram.com
+ADR:F-24 Jashraj Resi-Cum-Plaza,Nr.Parivar Society,
+Vadodara-390025
+END:VCARD
+            `;
+
+            // Create a Blob object from the vCard data
+            const blob = new Blob([vCardData], { type: 'text/vcard' });
+            // Create a link element
+            const link = document.createElement('a');
+            // Set the download attribute with a filename
+            link.download = 'HpInfotech(Harsh Prajapati).vcf';
+            // Create a URL for the Blob and set it as the href attribute
+            link.href = window.URL.createObjectURL(blob);
+            // Append the link to the body
+            document.body.appendChild(link);
+            // Simulate a click on the link to trigger the download
+            link.click();
+            // Remove the link from the document
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
