@@ -98,42 +98,67 @@ h2 {
     font-size: 15px; /* Consistent font size for button text */
 }
 
-/* Individual Link Colors */
+
+
+/* Individual Link Colors with Colored Logos */
 .instagram {
     background: #fff; /* White background */
     color: #000; /* Black text color */
     border: 2px solid #000; /* Black border */
+    background-image: url('path/to/instagram-logo.svg'); /* Path to colored Instagram logo */
+    background-size: 24px 24px; /* Adjust size of logo */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust position of logo */
+    padding-left: 40px; /* Space for the logo */
 }
 
-.linkedin {
-    background: #fff; /* White background */
-    color: #000; /* Black text color */
-    border: 2px solid #000; /* Black border */
-}
 
 .whatsapp {
     background: #fff; /* White background */
     color: #000; /* Black text color */
     border: 2px solid #000; /* Black border */
+    background-image: url('path/to/whatsapp-logo.svg'); /* Path to colored WhatsApp logo */
+    background-size: 24px 24px; /* Adjust size of logo */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust position of logo */
+    padding-left: 40px; /* Space for the logo */
 }
 
 .phone {
     background: #fff; /* White background */
     color: #000; /* Black text color */
     border: 2px solid #000; /* Black border */
+    background-image: url('path/to/phone-logo.svg'); /* Path to colored Phone logo */
+    background-size: 24px 24px; /* Adjust size of logo */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust position of logo */
+    padding-left: 40px; /* Space for the logo */
 }
 
 .email {
     background: #fff; /* White background */
     color: #000; /* Black text color */
     border: 2px solid #000; /* Black border */
+    background-image: url('path/to/email-logo.svg'); /* Path to colored Email logo */
+    background-size: 24px 24px; /* Adjust size of logo */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust position of logo */
+    padding-left: 40px; /* Space for the logo */
 }
 
 .map {
     background: #fff; /* White background */
     color: #000; /* Black text color */
     border: 2px solid #000; /* Black border */
+    background-image: url('path/to/map-logo.svg'); /* Path to colored Map logo */
+    background-size: 24px 24px; /* Adjust size of logo */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust position of logo */
+    padding-left: 40px; /* Space for the logo */
 }
+
+
+
 
 /* Hover Effects */
 .social-link:hover {
